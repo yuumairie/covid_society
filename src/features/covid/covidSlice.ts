@@ -1,10 +1,8 @@
-import { createSlice, createAsyncThunk, isAsyncThunkAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios"
 import { RootState } from "../../app/store";
 import dataJson from "./data.json"
 import dataJsonDaily from "./dataDaily.json"
-import { count } from "console";
-import { deflate } from "zlib";
 
 const apiUrl = "https://covid19.mathdro.id/api";
 type APIDATA = typeof dataJson
